@@ -39,14 +39,17 @@
     </li>
 </ul>
 </div>
-<div>
+<div id="card">
+    <div class="front">
+        <img class=mainimage src="MyAmazingCompany.png" />
+    </div>
+    <div class="back">
     <h1>My Amazing Company</h1>
     <p>
         My Amazing Company is an amazing company that does amazing stuff. We want to help amazing people do amazing things because that's just how we roll. Our amazingness nos only recognized from the inside, however; because Forbes also considers us to be a top 500 company. 
     </p>
-    <img class=mainimage src="MyAmazingCompany.png" >
-</div>
-<div>        
+    </div>
+</div>        
 <form method="post" action="apply-now.php">  
     <input name="subject" type="hidden" value="Class" />
     
@@ -88,6 +91,11 @@
         <input type="reset" value="Clear Form" />
     </p>
 </form>
-</div>
+        
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js" ></script>
+        <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+        <script>
+            $("#card").flip();
+        </script>
 </body>
 </html>
