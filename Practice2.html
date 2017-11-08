@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Operators</h2>
+    
+<ul>
+    <li>+ : Add <br> Example: x + y = <span id="d1"></span></li><br>
+    <li>- : Subtract <br> Example: x - y = <span id="d2"></span> </li><br>
+    <li>* : Multiply <br> Example: x * y = <span id="d3"></span> </li><br>
+    <li>/ : Divide <br> Example: x / y = <span id="d4"></span> </li><br>
+    <li>% : Modulus (finds the remainder from division)
+    <br> Example: x % y = <span id="d5"></span></li><br>
+    <li>++ : Incrementation
+    <br> Example: x++, ++x, y++, ++y = <span id="d6"></span></li><br>
+    <li>-- : Decrementation
+    <br> Example: x--, --x, y--, --y = <span id="d7"></span></li><br>
+    <li>You can also put an "=" after any operator to make it an ASSIGNMENT operator!</li>
+</ul>
+    
+<script>
+    x = 4;
+    y = 8;
+    document.getElementById("d1").innerHTML = x + y;
+    document.getElementById("d2").innerHTML = x - y;
+    document.getElementById("d3").innerHTML = x * y;   //Note what we see here:
+    document.getElementById("d4").innerHTML = x / y;   //This is called a statement!
+    document.getElementById("d5").innerHTML = x % y;
+    document.getElementById("d6").innerHTML = 
+        x++ + " " + ++x + " " + y++ + " " + ++y;
+    document.getElementById("d7").innerHTML = 
+        x-- + " " + --x + " " + y-- + " " + --y;
+</script>
+    
+    
+<h2>JavaScript Numbers</h2>
+    
+<p>
+   Unlike with other languages, JS only has ONE type of Number: 64 bit Floating points! Technically you can also have integer numbers (so no decimals) but they still "count" as being 64-bit floats!
+</p>
+<ul>
+    <li>0 - 51: Number</li>
+    <li>52 - 62: Exponent</li>
+    <li>63 : Sign</li>
+</ul>
+
+<p id="demo"></p>
+
+<script>
+var w = 4.6e5;
+var x = 5;
+var y = 3.4;
+var z = 4.6e-4;
+document.getElementById("demo").innerHTML = w + "<br>" + x + "<br>" + y + "<br>" + z;
+</script>
+    
+<h2>JavaScript Strings</h2>
+    
+<p>
+   As with other languages, JS strings are a bunch of characters strung together with quotation marks!
+</p>
+
+<p id="demo2"></p>
+<p id="demo2.1"></p>
+
+    
+<script>
+var w = "Hi";
+var x = "There";
+var y = "Uncommon";
+var z = "Maker!";
+document.getElementById("demo2").innerHTML = w + " " + x + " " + y + " " + z;
+document.getElementById("demo2.1").innerHTML = "100" + " is also a string, and not a number!! " + (3 + 97) + " is a number, however."
+
+</script>
+    
+<h2>JavaScript Booleans</h2>
+    
+<p>
+   As with other languages, JS booleans have two possible values - true or false!!
+</p>
+
+<ul>
+    <li id="demo3.1"></li>
+    <li id="demo3.2"></li>
+    <li id="demo3.3"></li>
+    <li id="demo3.4"></li>
+</ul>
+
+<script>
+document.getElementById("demo3.1").innerHTML = 
+    "4 > 5 is " + (4 > 5);
+document.getElementById("demo3.2").innerHTML = 
+    "4 > 3 is " + (4 > 3);
+document.getElementById("demo3.3").innerHTML = 
+    "4 > 3 is " + (4 > 3);
+document.getElementById("demo3.4").innerHTML = 
+    "Any expression / non-empty string is " + Boolean(100);
+document.getElementById("demo3.4").innerHTML = 
+    "Any null or NaN or false is " + Boolean(null);
+</script>
+    
+</body>
+</html>
+
+
