@@ -2,6 +2,13 @@
 <html>
 <body>
 
+<h2>Three ways to call JS</h2>
+    <ul>
+        <li>script tag in the head</li>
+        <li>script tag in the body</li>
+        <li>external .js files</li>
+    </ul>
+    
 <h2>JavaScript Operators</h2>
     
 <ul>
@@ -44,15 +51,26 @@
     <li>63 : Sign</li>
 </ul>
 
-<p id="demo"></p>
+<p id="dem1"></p>
+    
+<p>On a side but still related note, JS supports built in math properties!</p>
+    
+<p id="dem1.1"></p>
+<p id="dem1.2"></p>
 
+    
 <script>
 var w = 4.6e5;
 var x = 5;
 var y = 3.4;
 var z = 4.6e-4;
-document.getElementById("demo").innerHTML = w + "<br>" + x + "<br>" + y + "<br>" + z;
-</script>
+document.getElementById("dem1").innerHTML = w + "<br>" + x + "<br>" + y + "<br>" + z;
+document.getElementById("dem1.1").innerHTML = (Math.abs(-4));
+document.getElementById("dem1.2").innerHTML = 
+    (Math.random()) + "<br>" + //btwn 0 and 1 inclusive
+    (Math.floor(Math.random() * 10) + 1) + "<br>" +  //?
+    (Math.floor(Math.random() * 100) + 6); //?
+
     
 <h2>JavaScript Strings</h2>
     
@@ -87,6 +105,22 @@ document.getElementById("demo2.1").innerHTML = "100" + " is also a string, and n
     <li id="demo3.4"></li>
 </ul>
 
+<ul> Conditional Operators - return whether the operation is true or false
+        <li>== : equal to</li>
+        <li>=== : equal to and equal value type</li>
+        <li>!= : Not equal</li>
+        <li>!== : NOT equal to nor equal value type</li>
+        <li> > : greater than</li>
+        <li> &lt; : less than</li>
+        <li> >= : greater than or equal </li>
+        <li> &lt;= : greater than or equal </li>
+</ul>
+<ul> Logical Operators - combine conditional operators!
+        <li>&amp;&amp; : and</li>
+        <li>|| : or</li>
+        <li>! : not</li>
+</ul>
+    
 <script>
 document.getElementById("demo3.1").innerHTML = 
     "4 > 5 is " + (4 > 5);
@@ -98,6 +132,23 @@ document.getElementById("demo3.4").innerHTML =
     "Any expression / non-empty string is " + Boolean(100);
 document.getElementById("demo3.4").innerHTML = 
     "Any null or NaN or false is " + Boolean(null);
+</script>
+    
+<button id="togglebutton" onclick="togglecrap(this)" value="ON">Click Me to Toggle!</button>
+<p id="toggledBlock"></p>
+    
+<button id="dateButton" type="button" value="clickMe" onclick="document.getElementById('date').innerHTML = Date();">Click Me!</button>
+<p id="date"></p>
+    
+<script>
+    function togglecrap(button){
+        if (button.value == "OFF"){
+            button.value = "ON"
+        }
+        else {
+            button.value = "OFF"
+        }
+    }
 </script>
     
 </body>
