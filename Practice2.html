@@ -20,7 +20,7 @@
     <br> Example: x % y = <span id="d5"></span></li><br>
     <li>++ : Incrementation
     <br> Example: x++, ++x, y++, ++y = <span id="d6"></span></li><br>
-    <li>-- : Decrementation
+    <li>-- : Decrementation8
     <br> Example: x--, --x, y--, --y = <span id="d7"></span></li><br>
     <li>You can also put an "=" after any operator to make it an ASSIGNMENT operator!</li>
 </ul>
@@ -70,7 +70,7 @@ document.getElementById("dem1.2").innerHTML =
     (Math.random()) + "<br>" + //btwn 0 and 1 inclusive
     (Math.floor(Math.random() * 10) + 1) + "<br>" +  //?
     (Math.floor(Math.random() * 100) + 6); //?
-
+    </script>
     
 <h2>JavaScript Strings</h2>
     
@@ -133,23 +133,52 @@ document.getElementById("demo3.4").innerHTML =
 document.getElementById("demo3.4").innerHTML = 
     "Any null or NaN or false is " + Boolean(null);
 </script>
+   
+<h2>JavaScript Pop-Ups</h2>
+    
+<p>
+   As dependent on different browsers, JavaScript supports different pop-up blocks!
+    <br> Some examples are shown below!
+</p>
+<button id="popup" >Click on Me to pop up!</button>
+<br>
+    
+<script>
+    popup.onclick = 
+        function () {
+        nameof = prompt("This is a prompt! What is your name?"); 
+        alert('Hello, ' + nameof + '!');
+    }   
+</script>
+    
+<style>
+#toggledBlock {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
+    }
+</style>
     
 <button id="togglebutton" onclick="togglecrap(this)" value="ON">Click Me to Toggle!</button>
-<p id="toggledBlock"></p>
+<p id="toggledBlock">I toggle into a block :O</p><br>
     
-<button id="dateButton" type="button" value="clickMe" onclick="document.getElementById('date').innerHTML = Date();">Click Me!</button>
+<button id="dateButton" type="button" value="clickMe" onclick="document.getElementById('date').innerHTML = Date();">Click Me for the Date!</button>
 <p id="date"></p>
     
 <script>
     function togglecrap(button){
         if (button.value == "OFF"){
-            button.value = "ON"
+            button.value = "ON";
+            document.getElementById("toggledBlock").style.display = "block";
         }
         else {
-            button.value = "OFF"
+            button.value = "OFF";
+            document.getElementById("toggledBlock").style.display = "none";
         }
     }
-</script>
+</script>    
     
 </body>
 </html>
