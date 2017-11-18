@@ -2,57 +2,39 @@
 <!-- This is a doctype declaration, which essentially specifies which lang / version of markup language we are using in -->
 
 <html><!-- The html tags _________. -->
-<head><!-- The head tags show up in the body of our website??
+
+    <head><!-- The head tags show up in the body of our website??
             Y or N????-->
-</head>
+    </head>
+    <link >
+    
     <body><!-- this is the stuff that shows up as content in our website -->
     
-    <div style ="color:#FFFFFF; background: #ff6600">
-        <h1>Hello World!</h1><!-- headers help us structure things - what do you think the #s mean? -->
-        <h2><a>This is a heading and also a link!</a></h2>
-    <ol style = "font-size: 20px;"type = "1">
-        <li></li>
-        <li><img src="images/Cow_female_black_white.jpg" height="400" width="400" /></li>
-        <li>The image above me was sourced via local path address.</li>
-        <li></li>
-    </ol><!-- we have ol with a bunch of li elems ; what could that possibly mean????-->
-        <h2></h2>
-    <ul type = "square">
-        <li><img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Cow_female_black_white.jpg" height="400" width="400"/></li>
-        <li>The image above me was sourced via URL</li>
-        <li></li>
-    </ul><!-- we have ul with a bunch of li elems ; what could that possibly mean????-->        
-    <dl> ]
-        
-        <dt></dt>
-        <dd>This is a line of text.<br>There is a line break before this text. </dd>
-        <dt>Special Characters</dt>
-        <dd>&gt; &amp; &yen; </dd>
-    </dl>     <!-- run this code on your computer. what do yall see? -->
-                <!-- this is a description list! dl = ______, dd = _______, dt = _________ -->
-     
-    </div>
-    <table border = "7" >
-        <tr height = "60">
-            <td>
-                <em>People</em>
-            </td>
-            <td><del>Trump</del></td>
-            <td><img width = 100px src = "http://www.thewrap.com/wp-content/uploads/2015/11/Donald-Trump.jpg"></td>
-        </tr>
-        <tr height = "60">
-            <td><em>Dogs</em></td>
-            <td><a href = "https://www.google.com/search?q=labrador&source=lnms&tbm=isch&sa=X&ved=0ahUKEwijkfLGlbXOAhVH4GMKHbO1C9EQ_AUICCgB&biw=1920&bih=955#imgrc=FAXHi0tF3_9GNM%3A">labrador retriever</a></td>
-            <td><img width = 300px src = "http://cdn1-www.dogtime.com/assets/uploads/gallery/labrador-retriever-dog-breed-pictures/labrador-retriever-dog-pictures-8.jpg"></td>
-        </tr >
-    </table>  <!-- what do you think the different elements mean?? -->
-        
-    <!--This is a form!-->    
-        <form method="post" action="apply-now.php">   <!-- dwai about this part TOO much rn because we aren't really focusing on backend BUT what this does have to do with is how information collected in a form and to whom it is being sent -->
-            <input name="subject" type="hidden" value="Class" />
-            <fieldset> <!-- Allow us to group different elements together - almost kinda like a div but not really! -->
-                <legend>Academic information</legend> 
-                <label for="degree">Degree</label>
+    
+        <div><!--STYLE-->
+        <h1></h1><!-- headers help us structure things - what do you think the #s mean? -->
+        <!-- h2 --><a></a><!-- /h2 -->
+    
+            <ol>
+                <!--include image comp src-->
+            </ol><!-- we have ol with a bunch of li elems ; what could that possibly mean????-->    
+            <h2></h2>
+            <ul>
+                <!--img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Cow_female_black_white.jpg" height="400" width="400"/-->
+                
+            </ul><!-- we have ul with a bunch of li elems ; what could that possibly mean????-->        
+    
+            <table> ]
+                <tr>
+                    <td><br></td>
+                    <td>Special Characters</td>
+                    <td>&gt; &amp; &yen; </td>
+                </tr>
+            </table>     <!-- run this code on your computer. what do yall see? -->
+                
+    <!-- 1 id multiple classes-->
+   
+            <input name="subject" type="hidden" value="Class" />     
                 <select name="degree" id="degree">    
                     <option value="BA">Bachelor of Art</option>      <!-- allows user to access a popup / dropdown choice menu -->
                     <option value="BS">Bachelor of Science</option>
@@ -60,26 +42,14 @@
         Business Administration</option>
                 </select>
                 <br />
-                <label for="studentid">Student ID</label>
                 <input type="password" name="studentid" />  <!-- educated guess what does this do? -->
-            </fieldset>
-            <fieldset>
-                <legend>Personal Details</legend>
-                <label for="fname">First Name</label>
-                <input type="text" name="fname" id="fname" /> <!-- educated guess what does this do? -->
+                <br />
+                <input type="text" name="name" id="name" /> <!-- educated guess what does this do? -->
                 <br/>
-                <label for="lname">Last Name</label>
-                <input type="text" name="lname" id="lname" /> <!-- educated guess what does this do? -->
-            </fieldset>
-            <br />
-            <label for="email">Email</label>
-            <input type="text" name="email" id="email" />
-            <p><textarea name="terms" cols="30" rows="4">Describe your greatest accomplishment.</textarea></p>
             <p>
-                <input type="submit" name="submit" value="Send Form" />
-                <input type="reset" value="Clear Form" />
+                <textarea name="terms" cols="30" rows="4">
+                    
+                </textarea>
             </p>
-    </form>
-        
     </body>
 </html>

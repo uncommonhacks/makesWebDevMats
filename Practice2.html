@@ -121,6 +121,12 @@ document.getElementById("demo2.1").innerHTML = "100" + " is also a string, and n
         <li>! : not</li>
 </ul>
     
+<h2>JavaScript Conditions</h2>
+    
+<p>
+   We can apply what we've learned about boolean types here!
+</p>
+    
 <script>
 document.getElementById("demo3.1").innerHTML = 
     "4 > 5 is " + (4 > 5);
@@ -134,7 +140,32 @@ document.getElementById("demo3.4").innerHTML =
     "Any null or NaN or false is " + Boolean(null);
 </script>
    
+<h2>JavaScript Objects</h2>
+    
+    <p id="demo4.1"></p>
+    <p id="demo4.2"></p>
+    
+<script>
+    var uncommon = {event:"makes", personality:"awesome", food:"celery"};
+    document.getElementById("demo4.1").innerHTML = uncommon.event;
+    document.getElementById("demo4.2").innerHTML = uncommon.personality;
+</script>
+    
+    
+<h2>JavaScript Arrays</h2>
+    
+    <p id="demo5.1"></p>
+    <p id="demo5.2"></p>
+    
+<script>
+    var numstrings = ["1", "2", "3"];
+    var firstelem = numstrings[0];
+    document.getElementById("demo5.1").innerHTML = numstrings;
+    document.getElementById("demo5.2").innerHTML = firstelem;
+</script>
+    
 <h2>JavaScript Pop-Ups</h2>
+ 
     
 <p>
    As dependent on different browsers, JavaScript supports different pop-up blocks!
